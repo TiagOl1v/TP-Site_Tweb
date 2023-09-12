@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/logo-de-cima.jpg">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Auto Compra e Venda - Procurar, Comprar e Anunciar Carros Usados</title>
+    <script src="https://kit.fontawesome.com/0925830346.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="cabecalho">
+        <nav id="navbar">
+            <div class="container">
+                <div id="navbar-c">
+                    <div id="logo.principal" onclick="desaparece()"> <a href="#"><img src="imagens/logo principal.png" alt=""></a></div>
+                    
+                    <div id="nova-nav"><a href=""><i class="fa-solid fa-bars"></i></a> </div>
+                    
+                    <div id="aparece-nav">
+                    <ul class="navbar-ele">
+
+                        <li><a href="#"> <i class="fa-solid fa-magnifying-glass-plus"></i> Pesquisa</a>
+
+                            <ul class="dropdown-menu">
+                                <a href="#">
+                                    <li>Automoveis</li>
+                                </a>
+                                <a href="#">
+                                    <li>Comerciais</li>
+                                </a>
+                                <a href="#">
+                                    <li>Motos</li>
+                                </a>
+                                <a href="#">
+                                    <li>Barcos</li>
+                                </a>
+                                <a href="#">
+                                    <li>Pesados</li>
+                                </a>
+                                <a href="#">
+                                    <li>Salvados</li>
+                                </a>
+                                <a href="#">
+                                    <li>Stands</li>
+                                </a>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="#"> <i class="fa-solid fa-heart-circle-plus"></i> Favoritos</a></li>
+
+                        <li id="butao"><a href="#"> <i class="fa-solid fa-scroll"></i> Anunciar</a></li>
+
+
+
+                    </ul></div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="s-tabela">
+
+        <div class="container">
+            <div class="quase">
+
+                <div class="tabela">
+                    <ul class="icon">
+
+                     <li><a href=""><i class="fa-sharp fa-solid fa-car-side"></i>AUTOMOVEIS</a></li>
+
+                        <li><a href=""><i class="fa-solid fa-truck-moving"></i>COMERCIAIS</a></li>
+
+                        <li><a href=""><i class="fa-solid fa-motorcycle"></i></i>MOTOS</a></li>
+
+                        <li><a href=""><i class="fa-solid fa-sailboat"></i>BARCOS</a></li>
+
+                        <li><a href=""><i class="fa-regular fa-square-plus"></i>OUTROS</a></li>
+
+                
+
+                    </ul>
+
+                    <div class="tabela-sele">
+
+                        <div class="t-selex1">
+
+                                <select name="cars" id="marcas">
+                                <option >Escolhe marca</option>
+                                <option >BMW</option>
+                                <option >Mercedes</option>
+                                <option >Peugeot</option>
+                                <option >Audi</option>
+                                </select>
+                            
+                        </div>
+
+                        <div class="t-selex1">
+
+                                <select name="cars" id="cars">
+                                <option value="volvo">Modelo</option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                </select>
+
+                        </div>
+                        <div class="t-selex1">
+
+                            <select name="cars" id="cars">
+                                <option value=""><b>Registo</b> a partir de</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+                        </div>
+
+                        <div class="t-selex1">
+
+                            
+                            <select name="cars" id="cars">
+                                <option value="">Preço ate</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+
+
+                        </div>
+
+                        <div class="t-selex1">
+
+                            
+                            <select name="cars" id="cars">
+                                <option value="">Quilometros ate</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+
+
+                        </div>
+
+                        <div class="t-selex1">
+
+                            
+                            <select name="cars" id="cars">
+                                <option value="com">Combostivel</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+
+
+                        </div>
+
+                        <div class="t-selex1">
+                            <a href="#" class="pesq-av"><i class="fa-solid fa-magnifying-glass-plus"></i> Pesquisa Avançada</a>
+                        </div>
+
+                        <div class="t-selex1">
+                            <div class="botao-pesq">
+                                <a href=""> <i class="fa-solid fa-magnifying-glass-dollar"></i>  22606 Resultados</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div id="img-anuncio"><img  src="imagens/compramos.png" alt=""></div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <section class="grid">
+    <div class="container">
+        <div class="p-cima">
+            <h3><b>Oportunidades</b> de hoje </h3>
+
+            <a href="#" id="anuncio"><i class="fa-solid fa-scroll"></i> Anuncie aqui</a>
+
+        </div>
+        
+       <div class="venda-grid" >
+            
+             <a href="#"><div class="carros-venda1">
+                <div class="img-venda"> <img src="imagens/Porsche-718.jpg" alt=""></div>
+              
+            <div class="info-car">    
+                <p class="marca-venda"><b>Porsche</b> 718 Cayman</p>
+                <p class="modelo"> 2.5 GTS PDK</p>
+                
+                <ul>                
+                <li><i class="fa-solid fa-location-dot"></i> Santa Maria da Feira, AVEIRO</li>
+                <span><li><i class="fa-solid fa-calendar-days"></i> Ago / 2018</li>
+                <li><i class="fa-solid fa-road"></i> 35.000 km</li>
+                <li><i class="fa-solid fa-gas-pump"></i> Gasolina</li></span></ul>
+                
+            </div>                
+            <div class="botao-venda">
+                    <span><b>86.750</b> EUR</span>
+                </div>
+        </div></a>
+
+           <a href=""> <div class="carros-venda1">
+                
+            <div class="img-venda"> <img src="imagens/ferrari-italia.jpg" alt=""></div>
+              
+            <div class="info-car">    
+                <p class="marca-venda"><b>Ferrari</b> 468</p>
+                <p class="modelo"> Italia</p>
+                
+                <ul>                
+                <li><i class="fa-solid fa-location-dot"></i> Odivelas, LISBOA</li>
+                <span><li><i class="fa-solid fa-calendar-days"></i> Jun / 2011</li>
+                <li><i class="fa-solid fa-road"></i> 42.374 km</li>
+                <li><i class="fa-solid fa-gas-pump"></i> Gasolina</li></span></ul>
+                
+            </div>                
+            <div class="botao-venda">
+                    <span><b>196.750</b> EUR</span>
+                </div>
+
+
+            </div></a>
+
+          <div class="carros-veda1">
+
+            </div>
+
+            <a href=""><div class="carros-venda1">
+
+                <div class="img-venda"> <img src="imagens/AUDI-R8.jpg" alt=""></div>
+              
+                <div class="info-car">    
+                    <p class="marca-venda"><b>Audi</b> R8</p>
+                    <p class="modelo"> Spyder 5.2 FSI V10 S Tronic</p>
+                    
+                    <ul>                
+                    <li><i class="fa-solid fa-location-dot"></i> Matosinhos, PORTO</li>
+                    <span><li><i class="fa-solid fa-calendar-days"></i> Set / 2017</li>
+                    <li><i class="fa-solid fa-road"></i>69.4700 km</li>
+                    <li><i class="fa-solid fa-gas-pump"></i> Gasolina</li></span></ul>
+                    
+                </div>                
+                <div class="botao-venda">
+                        <span><b>184.000</b> EUR</span>
+                    </div>
+
+            </div></a>
+
+        
+            <a href=""><div class="carros-venda1">
+
+                <div class="img-venda"> <img src="imagens/FOR-RS.jpg" alt=""></div>
+              
+                <div class="info-car">    
+                    <p class="marca-venda"><b>Ford</b></p>
+                    <p class="modelo"> Focus RS Pack Performance</p>
+                    
+                    <ul>                
+                    <li><i class="fa-solid fa-location-dot"></i> Tábua, COIMBRA</li>
+                    <span><li><i class="fa-solid fa-calendar-days"></i> Mai / 2016</li>
+                    <li><i class="fa-solid fa-road"></i>46.980 Km</li>
+                    <li><i class="fa-solid fa-gas-pump"></i> Gasolina</li></span></ul>
+                    
+                </div>                
+                <div class="botao-venda">
+                        <span><b>42.000</b> EUR</span>
+                    </div>
+
+
+            </div></a>
+
+
+
+            <a href=""><div class="carros-venda1">
+                <div class="img-venda"> <img src="imagens/tesla.jpg" alt=""></div>
+              
+                <div class="info-car">    
+                    <p class="marca-venda"><b>Tesla</b> Model 3</p>
+                    <p class="modelo"> Performance Dual Motor AWD</p>
+                    <ul>                
+                    <li><i class="fa-solid fa-location-dot"></i> Loures, LISBOA</li>
+                    <span><li><i class="fa-solid fa-calendar-days"></i> Fev / 2022</li>
+                    <li><i class="fa-solid fa-road"></i> 6.000 km</li>
+                    <li><i class="fa-solid fa-gas-pump"></i> Electrico</li></span></ul>
+                    
+                </div>                
+                <div class="botao-venda">
+                        <span><b>65.500</b> EUR</span>
+                    </div>
+            </div></a>
+
+        </div>
+
+
+
+</div>
+    </section>
+
+
+<!----------------------------------------------------Grid 2------------------------------------------------->
+
+    <section id="grid-2">
+    
+<div class="container">  
+
+    <div class="venda-grid" >
+            
+        <a href="#"><div class="carros-venda">
+           <div class="img-venda"> <img src="imagens/peugeot-308.png" alt=""></div>
+         
+       <div class="info-car">    
+           <p class="marca-venda"><b>Peugeot</b> 308 SW</p>
+           <p class="modelo">1.6 BlueHDi Style</p>
+           
+           <ul>                
+           <li><i class="fa-solid fa-location-dot"></i> Torres Novas, SANTARÉM</li>
+           <span><li><i class="fa-solid fa-calendar-days"></i> Dez / 2015</li>
+           <li><i class="fa-solid fa-road"></i> 150.000 km</li>
+           <li><i class="fa-solid fa-gas-pump"></i> Gasóleo</li></span></ul>
+           
+       </div>                
+       <div class="botao-venda">
+               <span><b>13.950</b> EUR</span>
+           </div>
+   </div></a>
+
+      <a href=""> <div class="carros-venda">
+           
+       <div class="img-venda"> <img src="imagens/nissan-1.6.jpg" alt=""></div>
+         
+       <div class="info-car">    
+           <p class="marca-venda"><b>Nissan</b> Qashqai </p>
+           <p class="modelo"> 1.6 dCi Tekna Premium</p>
+           
+           <ul>                
+           <li><i class="fa-solid fa-location-dot"></i> Torres Novas, SANTARÉM</li>
+           <span><li><i class="fa-solid fa-calendar-days"></i> Dez / 2012</li>
+           <li><i class="fa-solid fa-road"></i>170.000 Km</li>
+           <li><i class="fa-solid fa-gas-pump"></i> Gasoleo</li></span></ul>
+           
+       </div>                
+       <div class="botao-venda">
+               <span><b>13.420</b> EUR</span>
+           </div>
+
+
+       </div></a>
+
+
+       <a href=""><div class="carros-venda">
+
+           <div class="img-venda"> <img src="imagens/mini-cooper.jpg" alt=""></div>
+         
+           <div class="info-car">    
+               <p class="marca-venda"><b>MINI</b> Cooper</p>
+               <p class="modelo"> D Auto - Full Extras</p>
+               
+               <ul>                
+               <li><i class="fa-solid fa-location-dot"></i> Matosinhos, PORTO</li>
+               <span><li><i class="fa-solid fa-calendar-days"></i> Jan / 2014</li>
+               <li><i class="fa-solid fa-road"></i> 145.400 km</li>
+               <li><i class="fa-solid fa-gas-pump"></i> Gasoleo</li></span></ul>
+               
+           </div>                
+           <div class="botao-venda">
+                   <span><b>18.000</b> EUR</span>
+               </div>
+
+       </div></a>
+
+   
+
+
+
+
+   </div>
+
+        <div class="btn-more">
+            <a href="#"> Ver mais oportonidades</a>
+        </div>
+
+</div>
+          
+    </section>
+
+    <!---- marcas-end ------>
+    <section>
+        <div class="container">
+
+            <div class="end-marcas">
+                <h2>As marcas com mais oferta</h2>
+
+
+
+                <div class="marcas-div">
+
+                    <a href="">
+                        <div class="marcas-logo">
+                            <img src="imagens/renault.png" alt="">
+                            <p>8217 Carros</p>
+                            <span>Renault</span>
+                    </a>
+                </div>
+                <div class="marcas-logo">
+                    <a href=""><img src="imagens/peugeot.png" alt="">
+                        <p>7287 Carros</p>
+                        <span>Peugeot</span>
+                    </a>
+                </div>
+                <div class="marcas-logo">
+                    <a href=""><img src="imagens/mercedes.png" alt="">
+                        <p>7140 Carros</p>
+                        <span>Mercedes-Benz</span>
+                    </a>
+                </div>
+                <div class="marcas-logo">
+                    <a href=""><img src="imagens/bmw.png" alt="">
+                        <p>6528 Carros</p>
+                        <span>BMW</span>
+                    </a>
+                </div>
+                <div class="marcas-logo">
+                    <a href=""><img src="imagens/vw.png" alt="">
+                        <p>3484 Carros</p>
+                        <span>Volkswagen</span>
+                    </a>
+                </div>
+                <div class="marcas-logo">
+                    <a href=""><img src="imagens/citroen.png" alt="">
+                        <p>3396 Carros</p>
+                        <span>Citroen</span>
+                    </a>
+                </div>
+                <div class="marcas-logo">
+                    <a href=""><img src="imagens/audi.png" alt="">
+                        <p>2810 Carros</p>
+                        <span>Audi</span>
+                    </a>
+                </div>
+                <div class="marcas-logo">
+                    <a href=""><img src="imagens/fiat.png" alt="">
+                        <p>2751 Carros</p>
+                        <span>Fiat</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div> 
+    </section>
+
+
+    <!--------Foter distritos -------->
+    <section>
+        <div class="container">
+            <div class="pesquisa-distri">
+                <h3>Stands proximos de si</h3>
+                <div class="distritos-lable">
+                    <label for="distritos" id="distrito-select">
+                        <select name="distritos">
+                            <option value="lisboa">Distrito de Lisboa (235)</option>
+                            <option value="aveiro">Distrito de Aveiro </option>
+                            <option value="beja">Distrito de Beja</option>
+                            <option value="braga">Distrito de Braga</option>
+                            <option value="castelo branco"> Distrito de Castelo Branco </option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div id="lojas">
+                <h6> Por conselho: </h6>
+                <a href="#">Sintra (43)</a>
+                <a href="#">Lisboa (36)</a>
+                <a href="#">Loures (32)</a>
+                <a href="#">Odivelas (32)</a>
+                <a href="#">Cascais (22)</a>
+                <a href="#">Vila Franca de Xira Amadora (17)</a>
+                <a href="#">Amadora (16)</a>
+                <a href="#">Mafra (9)</a>
+                <a href="#">Oeiras (8)</a>
+                <a href="#">Alenquer (7)</a>
+                <a href="#">Torres Vedras (6)</a>
+                <a href="#">Azambuja (4)</a>
+                <a href="#">Lourinha (2)</a>
+                <a href="">Arruda dos Vinhos (1)</a>
+
+            </div>
+    </section>
+    <!-----Mapa----->
+    <section>
+
+        <div id="mapa">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d198637.25653395426!2d-9.118311333843168!3d38.93067092395612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1671821665100!5m2!1spt-PT!2spt"
+                width="2000" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        </div>
+    </section>
+
+  <!----------------------------------------------------------------Extraaaa-------------------------------------------------------------------------->
+    <section id="Extra-js">
+        <div class="container">
+            <div class="titel"> <h1>Calculo do carro: </h1></div>
+            <div class="Extra">
+                <div><form id="Calcular">
+                    <div>
+                    <h3>Marca: <input id="Marca-do-carro" type="text" placeholder="Diaga a Marca do carro"></h2>
+                     <br><h3>Modelo: <input id="Modelo-do-carro" type="text" placeholder="Diaga o Modelo do carro"></h3>
+                     <br><h3>Preço inicial: <input id="Preço-inicial" type="number" placeholder="Insira o preco inicial" step="500" min="0"></h3>
+                     <br><h3>Ano matricula: <input id="Ano-matricula" type="number" placeholder="Insira o ano da matricula" min="1911"></h3>
+                     <br><h3>Quilometragem: <input id="Quilometros-carro" type="number" placeholder="Insira o hm do carro" step="1000" min="0"></h3></h3>
+                    </div>
+                          
+                 </form>
+                
+                  
+                </div>
+
+                <div class="btn">
+                    <input type="submit" name="" onclick="fmodelo_carro()" value="Calcular valor do carro" >
+                </div>
+
+                 
+           
+            
+             <div id="venda-carros">
+                    <div class="tt"><h1> Estados do carro : </h1></div>
+                 <div>
+                  <div id="carro-Muito-bom" onclick="F_d1()">  
+                    <h2>Muito bom estado</h2>
+                       <h4>Preço: <span id="Carro_mb"></span></h4>
+                      <h4>Marca: <span class="print-marca"></span></h4>
+                      <h4>Modelo: <span class="print-modelo"></span></h4>
+                       <h4>Ano matricula: <span class="print-matricula"></span></h4>
+                       <h4>Nº de Km: <span class="print-km"></span></h4>
+                 </div> 
+             
+                 <div id="carro-bom" onclick="F_d2()">
+                    <h2>Bom estado </h2>
+                     <h4>Preço: <span id="Carro_b"></span> </h4> 
+                     <h4>Marca: <span class="print-marca"></span></h4>
+                      <h4>Modelo: <span class="print-modelo"></span></h4>
+                       <h4>Ano matricula: <span class="print-matricula"></span></h4>
+                       <h4>Nº de Km: <span class="print-km"></span></h4>
+                 </div> 
+             
+                 <div id="carro-mau" onclick="F_d3()">
+                    <h2>Mau estado</h2>
+                     <h4>Preço: <span id="Carro_m"></span>  </h4>
+                     <h4>Marca: <span class="print-marca"></span></h4>
+                     <h4>Modelo: <span class="print-modelo"></span></h4>
+                      <h4>Ano matricula: <span class="print-matricula"></span></h4>
+                      <h4>Nº de Km: <span class="print-km"></span></h4>
+                 </div> 
+                     </div>
+            </div>   
+                 
+             <div id="part-financiamento-none" >
+                  <div id="part-financiamento">
+            
+                    <span id="valor-escolhido"> </span>
+                            <div id="part-1-fina">
+                            <p>Valor da entrada</p>
+                            <input type="range" id="rangeInput1" min="100" max="250000" value="250">
+                                <span id="rangeValue"> 100 €</span>
+                        </div>
+            
+                        <div id="part-2-fina">
+                            <p>Total Anos</p>
+                            <input type="range" id="rangeInput2" min="1" max="15" value="1">
+                            <span id="anos-emp">1</span>
+            
+                        </div>
+            
+            
+                        <input type="submit" name="Financiamento" onclick="financiamento_do_carro()" value="Financiamento">
+                   </div></div>  
+                   <div id="bancos">
+                        <div id="banco1">
+                            <img src="imagens/bpi.png" alt="">
+                            <h3>Valor do carro: <span class="valor-final-carro"> </span> €</h3>
+                            <h3>Valor do emprestimo: <span class="valor-emprestimo-banco"> </span> €</h3>
+                            <h3>Duracao de: <span class="duracao-meses"> </span> meses</h3>
+                            <h3>Taxa de juro: <span id="taxa-juro1">  </span> %</h3>
+                            <h3>Spread: <span id="taxa-spread1"> </span> %</h3>
+                            <h3>Valor de entrada inicial: <span class="valor-entrada-inicial"> </span> €</h3>
+                            <h3>Valor mensal da prestacao: <span id="valor-apagar-mensal1"> </span> €</h3>
+                            
+                        </div>
+            
+                        <div id="banco2">
+                            <img src="imagens/santa.jpg" alt="">
+                            <h3>Valor do carro: <span class="valor-final-carro"> </span> €</h3>
+                            <h3>Valor do emprestimo: <span class="valor-emprestimo-banco"> </span> €</h3>
+                            <h3>Duracao de: <span class="duracao-meses"> </span> meses</h3>
+                            <h3>Taxa de juro: <span id="taxa-juro2"> </span> %</h3>
+                            <h3>Spread: <span id="taxa-spread2"> </span> %</h3>
+                            <h3>Valor de entrada inicial: <span class="valor-entrada-inicial"> </span> €</h3>
+                            <h3>Valor mensal da prestacao: <span id="valor-apagar-mensal2"> </span> €</h3>
+                            
+                        </div>
+            
+                        <div id="banco3">
+                            <img src="imagens/Caixa-Geral-de-Depositos.png" alt="">
+                            <h3>Valor do carro: <span class="valor-final-carro"> </span> €</h3>
+                            <h3>Valor do emprestimo: <span class="valor-emprestimo-banco"> </span> €</h3>
+                            <h3>Duracao de: <span class="duracao-meses"> </span> meses</h3>
+                            <h3>Taxa de juro: <span id="taxa-juro3"> </span> %</h3>
+                            <h3>Spread: <span id="taxa-spread3"> </span> %</h3>
+                            <h3>Valor de entrada inicial: <span class="valor-entrada-inicial"> </span>€</h3>
+                            <h3>Valor mensal da prestacao: <span id="valor-apagar-mensal3"> </span>€</h3>
+                            
+                        </div>
+            
+                        
+            
+             
+            
+                   </div>
+            
+            </div> 
+
+    </section>
+
+<section class="footer">
+
+        <div class="container">
+
+            <div class="footer">
+
+                <div class="info-top">
+                    <div class="info-2">
+                        <p>Sobre Nós</p>
+                        <ul>
+                            <li><a>Compra e Venda</a></li>
+                            <li><a>Recrutamento</a></li>
+                            <li><a>Contactos</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="info-1">
+                        <p>Particulares</p>
+                        <ul>
+                            <li><a>Anunciar</a></li>
+                            <li><a>Destaques</a></li>
+                            <li><a>Condições</a></li>
+                            <li><a>Ajuda</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="info-1">
+                        <p>Profissionais</p>
+                        <ul>
+                            <li><a>Anunciar</a></li>
+                            <li><a>Destaques</a></li>
+                            <li><a>Condições</a></li>
+                            <li><a>Ajuda</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="info-1">
+                        <p>Anúncios</p>
+                        <ul>
+                            <li><a>Automóveis</a></li>
+                            <li><a>Comerciais</a></li>
+                            <li><a>Motos</a></li>
+                            <li><a>Barcos</a></li>
+                            <li><a>Pesados</a></li>
+                            <li><a>Salvados</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contactos">
+                    <p>Fique a par das novidades</p>
+                    <div class="contactos-logos">
+                        <ul>
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-solid fa-envelope"></i></a>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="info-bottom">
+                    <img src="imagens/logo-fim.png">
+                    <ul>
+                        <li><a>CONDIÇÕES DE UTILIZAÇÃO</a></img></li>
+                        <a>|</a>
+                        <li><a>POLÍTICA DE PRIVACIDADE</a></img></li>
+                        <a>|</a>
+                        <li><a>POLÍTICA COOKIES</a></img></li>
+                        <a>|</a>
+                        <li><a>ESTATUTO EDITORIAL</a></li>
+                    </ul>
+                    <p>© 2023 Auto Compra e Venda</p>
+                </div>
+            </div>
+        </div></div>
+</section>
+
+<a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
